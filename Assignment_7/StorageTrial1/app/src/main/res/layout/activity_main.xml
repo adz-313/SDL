@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.storagetrial1.MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:onClick="save"
+        android:text="save to internal" />
+
+    <Button
+        android:id="@+id/button_load"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text"
+        android:layout_alignStart="@+id/button_save"
+        android:layout_alignLeft="@+id/button_save"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="77dp"
+        android:onClick="load"
+        android:text="load from internal" />
+
+    <Button
+        android:id="@+id/button_extsave"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="135dp"
+        android:onClick="save"
+        android:text="save to external" />
+
+    <Button
+        android:id="@+id/button_extload"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text"
+        android:layout_alignStart="@+id/button_save"
+        android:layout_alignLeft="@+id/button_save"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="190dp"
+        android:onClick="load"
+        android:text="load from external" />
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvLoad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+    </ScrollView>
+
+</RelativeLayout>
